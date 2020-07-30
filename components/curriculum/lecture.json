@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_curriculum_lectures",
+  "info": {
+    "name": "Lecture",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "class": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "videoUrl": {
+      "type": "string"
+    }
+  }
+}
